@@ -193,17 +193,6 @@ src/
 3. Add appropriate coordinates for map display
 4. Test the new aircraft in all views
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Support
-
-For support or questions, please open an issue in the repository.
 
 ---
 
