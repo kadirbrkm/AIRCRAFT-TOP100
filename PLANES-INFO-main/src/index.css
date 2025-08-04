@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-dark-950 text-white font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-dark-950;
+  }
+  
+  .btn-secondary {
+    @apply bg-dark-800 hover:bg-dark-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 border border-dark-600 hover:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-dark-950;
+  }
+  
+  .card {
+    @apply bg-dark-900 border border-dark-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-primary-500/50;
+  }
+  
+  .input-field {
+    @apply bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-white placeholder-dark-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent;
+  }
+  
+  .aviation-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #1e293b 75%, #0f172a 100%);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-600;
+}
+
+/* Leaflet map customizations */
+.leaflet-container {
+  @apply rounded-xl;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply bg-dark-900 border border-dark-700 rounded-lg;
+}
+
+.leaflet-popup-content {
+  @apply text-white;
+}
+
+.leaflet-popup-tip {
+  @apply bg-dark-900;
+}
+
+/* Animation classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500;
+}
