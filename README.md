@@ -160,39 +160,6 @@ Each aircraft includes:
 - Geographic coordinates for mapping
 - Variants and operators
 
-## 🎨 Customization
-
-### Colors
-The theme uses a custom color palette:
-- **Primary**: Blue shades (#3b82f6)
-- **Accent**: Red shades (#ef4444)
-- **Dark**: Dark gray shades (#0f172a)
-- **Gradients**: Blue to red gradient text effects
-
-### Typography
-- **Aviation font**: Orbitron for headings
-- **Body font**: Inter for content
-- **Responsive font sizes** for all screen sizes
-
-## 🔧 Development
-
-### Project Structure
-```
-src/
-├── components/     # Reusable components
-├── pages/         # Page components
-├── data/          # Aircraft data and utilities
-├── App.tsx        # Main app component
-├── main.tsx       # Entry point
-└── index.css      # Global styles
-```
-
-### Adding New Aircraft
-1. Add aircraft data to `src/data/aircraft.ts`
-2. Include all required fields (specs, history, achievements, etc.)
-3. Add appropriate coordinates for map display
-4. Test the new aircraft in all views
-
 
 ---
 
